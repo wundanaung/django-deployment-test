@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends 'basic_app/base.html' %}
+{% load my_extra %}
+  {% block body_block %}
+    <h1>Welcome to Index</h1>
+    <h1>{{ text|rword:'he' }}</h1>
+    #builtin filters
+    <h2>{{ number|add:'9' }}</h2>
+  {% endblock %}

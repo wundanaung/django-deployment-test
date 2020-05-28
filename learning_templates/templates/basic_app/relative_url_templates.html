@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Welcome to Relative URL templates</h1>
+    <a href="{% url 'basic_app:other' %}">Other page</a>
+    #basic_app is referring to the app_name in urls.py of basic_app
+    #other in RHS is the name it looks for in the corresponding page
+    <a href="{% url 'admin:index' %}">Admin</a>
+    <a href="{% url 'index' %}">Index</a>
+    #takes you to the name index in the main url page
+
+
+  </body>
+</html>
